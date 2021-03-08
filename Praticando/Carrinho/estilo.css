@@ -1,0 +1,83 @@
+body {
+    background: rgb(107, 151, 233);
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header{
+color:snow;
+text-align:center;
+}
+
+section{
+background: snow;
+border-radius:10px;
+padding: 15px;
+width: 450px;
+margin:auto;
+box-shadow:5px 5px 10px rgba(10, 12, 11, 0.24)
+}
+
+input{
+    text-align: center;
+}
+
+
+
+td{
+    padding-top: 3px;
+}
+
+img{
+    width:20px;
+}
+
+div#res{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#botão{
+    padding-top: 10px;
+}
+
+.btncompra:hover{
+    background-color: chartreuse;
+    color: black;
+}
+
+.btn1:hover{
+background-color: fuchsia;
+}
+
+.btn2:hover{
+background-color: fuchsia;
+}
+
+button{
+    color:white;
+    background-color: deepskyblue;
+    cursor: pointer;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.329);
+}
+
+button#limpa{
+    color:white;
+    background-color: rgb(255, 94, 0);
+    cursor: pointer;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.329);
+}
+
+button#limpa:hover{
+    color:rgb(255, 94, 0);
+    background-color: white;
+    cursor: pointer;
+    box-shadow:1px 1px 2px rgba(0, 0, 0, 0.329);
+}
+  
+footer{
+    color:snow;
+    text-align: center;
+    font-style: italic;
+    }
+    

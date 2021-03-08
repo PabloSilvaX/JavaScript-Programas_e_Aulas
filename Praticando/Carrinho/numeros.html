@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--icones-->
+</head>
+<body>
+    <header>
+        <h1>Carrinho de Produtos</h1>
+    </header>
+    <section>
+        <h4>Adicione Itens ao seu Carrinho</h4>
+
+<div id="itens">
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">Img</th>
+            <th scope="col">Produto</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Adicionar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="imagem1"><img src="https://i.pinimg.com/736x/55/f7/73/55f77355a9bab38185314a25dedba7fc.jpg" alt=""></img></td>
+            <td id="1"><input type="text" value="Flamingo" id="prod1" name="prod1"></td>
+            <td><input name="Unidade1" type="number" value="1" id="Unidade1" style="font-size: 13pt; vertical-align: middle; font-weight: bold; border: 1px solid #008000; padding: 0; width:40px" maxlength="2"></td>
+            <td>
+              <button type="button" class="btncompra" onclick="adicionar(1)">
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="imagem2"><img src="https://superprix.vteximg.com.br/arquivos/ids/178620-600-600/Batata-Especial-1kg.png?v=636857520320030000" alt=""></img></td>
+            <td id="2"><input type="text" value="Batata" id="prod2" name="prod2"></td>
+            <td><input name="Unidade2" type="number" value="1" id="Unidade2" style="font-size: 13pt; vertical-align: middle; font-weight: bold; border: 1px solid #008000; padding: 0; width:40px" maxlength="2"></td>
+            <td>
+              <button type="button" class="btncompra" onclick="adicionar(2)">
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="imagem3"><img src="http://pm1.narvii.com/7774/d228ff333265c93d2b535e28165e1928d9b9f278r1-540-540v2_00.jpg" alt=""></img></td>
+            <td id="3"><input type="text" value="Goku" id="prod3" name="prod3"></td>
+            <td><input name="Unidade3" type="number" value="1" id="Unidade3" style="font-size: 13pt; vertical-align: middle; font-weight: bold; border: 1px solid #008000; padding: 0; width:40px" maxlength="2"></td>
+            <td>
+              <button onclick="adicionar(3)" type="button" class="btncompra">
+                <i class="fa fa-cart-plus"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+</section>
+
+<br>
+
+    <section>
+        <h4>Seu Carrinho:</h4>
+        <button id="limpa">
+<p id="limpa" onclick="limpa()">Limpar Carrinho</p>
+</button>
+    <div id="res">
+
+    </div>
+</section>
+ <footer>
+     <p>&copy; Pablito</p>
+ </footer>
+ <script src="script.js"></script>
+ <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous">//icones</script>
+ <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ 
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checando Nacionalidade</title>
+</head>
+<body>
+    <h1>Checar Nacionalidade</h1>
+    Seu pais: <input type="text" name="pais" id="pais">
+    <input type="button" value="checar" onclick="checar()">
+    <div id="res">
+        
+    </div>
+    <script>
+        function checar(){
+        var pais = window.document.querySelector('input#pais')
+        var digitou = (pais.value)
+        res.innerHTML = `Seu pais é: ${digitou}`
+        if(pais == 'Brasil'){
+            res.innerHTML = `Você mora no <strong style="color: red;">${digitou}</strong> você é Brasileiro.`
+        }else{ //condição composta
+            res.innerHTML = `Você mora em <strong style="color: red;">${digitou}</strong> você é estrangeiro.`
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando | 1</title>
+
+<style>
+    body {
+        font: normal 20pt Arial;
+        text-align: center;
+        color: white;
+        margin-top: 200px;
+        background-color: darkmagenta;
+    }
+</style>
+
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    var salario = Number(window.prompt('Qual seu salário por mês?')) //Pergunta o salario (para usuario digitar) e converte para o tipo numero e guarda a info na variavel salario
+
+    salario *=12 //salario * 12 (faz a conta 12 vezes o salario digitado e guarda na variavel salario)
+    
+
+    if(salario > 10000){ //confere se o salario e maior que 10000
+        salario = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //converte o salario para valor monetario brasileiro
+        document.write(`Um salário de ${salario} por ano é um bom salário!`) //Exibe a mensagem dizendo que é um bom salario
+    }else{//o else serve caso o if retorne falso (caso o salario não seja maior que 10000)
+        salario = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //converte o salario para valor monetario brasileiro
+        document.write(`Um salário de ${salario} por ano é exploração!`) //Exibe a mensagem dizendo que é um salario ruim
+    }
+       
+
+</script>
+
+</html>
