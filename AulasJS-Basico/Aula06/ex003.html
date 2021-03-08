@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Primeiro Programa em JS</title>
+
+
+<style>
+    body{
+        background-color: rgb(65, 211, 216);
+        color:azure;
+    }
+
+    h1{
+        color:rgb(228, 165, 83);
+    }
+</style>
+
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Paragrafo aleatorio</p>
+    <script>
+     var n1 = Number(window.prompt('Digite um Número:'))//faz a conversão doque é digitado em um tipo numerico (quebrado ou inteiro)
+     var n2 = Number(window.prompt('Digite outro Número:'))//faz a conversão doque é digitado em um tipo numerico (quebrado ou inteiro)
+
+     Number.parseFloat //define o tipo como float
+     Number.parseInt //define o tipo como inteiro
+     Number //identifica automaticamente o tipo
+
+
+     var S = n1 + n2
+
+     window.alert(`A soma entre ${n1} e ${n2} é igual a ${S}`)//template string (o "${}" faz a "junção" das variaveis com a mensagem "une elas")
+
+
+//     window.alert('A soma dos valores é ' + String(S))//concatenção (o "String()" faz a conversão para uma string)
+   
+     // number + number para adição
+     // string + string para concatenação
+     // parse serve para converter tipos de variavel como de string para number
+     //Float ponto flutuante (numeros "quebrados")
+     //Int inteiros (numeros inteiros)
+     //string caracteres (conjunto de caracteres)
+  
+  /* Supondo que se tem uma variavel "s"
+  var s = 'JavaScript'
+  'eu estou aprendendo s' // não faz interpolação (não exibira a info da variavel)
+  'eu estou aprendendo' + s // usa concatenação (exibira a info da variavel)
+  `eu estou aprendendo ${s}` //usa template string (exibira a info da variavel)
+  */
+ 
+  </script>
+    
+</body>
+</html>
+

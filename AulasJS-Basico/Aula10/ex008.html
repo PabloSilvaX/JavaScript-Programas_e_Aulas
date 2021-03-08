@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://pm1.narvii.com/7635/4148fe69cfb1700546f4c9134bada2f4317e748dr1-1080-1280v2_hq.jpg">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgba(129, 44, 207, 0.863);
+        }
+        div#area{
+            background: chartreuse;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            cursor:crosshair;
+        }
+  /*      .exemplo_1 {cursor:crosshair;}.exemplo_2 {cursor:help;}.exemplo_3 {cursor:move;}.exemplo_4 {cursor:pointer;}.exemplo_5 {cursor:text;}
+  Exemplos de tipo de cursor (Fora da) */   
+
+    </style>
+</head>
+<body>
+<!--<div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">  #ativando evento pelo html-->
+<div id="area">
+    Interaja com este quadrado...
+</div>
+    <script>
+    var area = window.document.getElementById('area') //window. não e necessário mas tambem pode ser usado sem problema como acima
+area.addEventListener('click', clicar)
+area.addEventListener('mouseenter', entrar)
+area.addEventListener('mouseout', sair)
+function clicar(){
+    area.innerText = 'Clicou!'
+    area.style.background = 'red'
+}
+function entrar(){
+    area.innerText = 'Mouse dentro'
+    area.style.background = 'white'
+}
+function sair(){
+    area.innerText = 'Mouse fora'
+    area.style.background = 'orange'
+}
+
+        //#aula anterior V
+//DOM (Document Object Model), ele facilita o acesso aos objetos do seu website como tags divs etc
+/*Metodos de acessar os elementos de um site
+Por Marca(tagname) - getElementsByTagName()   #possivel selecionar mais de um objeto
+Por ID  - getElementById()
+Por Nome - getElementsByname()
+Por Classe - getElementsByClassName()
+Por Seletor - querySelector()|querySelectorAll()
+
+Nova aula V
+####################EVENTOS######################
+O maios comuns são os eventos de interação com o mouse como:
+supondo que temos um elemento div vejamos alguns exemplos de eventos DOM com mouse:
+mouseenter #quando mouse entra na div
+mousemove #quando mouse se move na div
+mousedown #quando você clica e segura na div
+mouseup #quando você solta o click na div
+click #ao clicar rapidamente na div
+mouseout #ao retirar o mouse da div na div
+
+os eventos podem ser configurados tanto na parte HTML como na parte JavaScript
+
+#Funções
+Conjuntos de funcionalidades que ocorrem apenas quando efeito é ativado
+
+
+function ação(parametro){
+
+}
+
+*/
+    </script>
+
+</body>
+</html>

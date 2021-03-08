@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgba(129, 44, 207, 0.863);
+            color:cornsilk;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+
+<!-- DOM é um conjunto de objetos que da acesso aos componentes internos
+internos do site (Document Object Model)
+
+##Árvore DOM (window - o objeto que possui tudo exibidio em seu site)
+            Hierarquia da pagina, acima são Parents e abaixo chields
+exemplo de arvore DOM de um site:
+                    window
+            V          V           V
+        location    document    history
+                     V
+                    html
+                  V      V
+                head    body
+-->
+
+    <script>
+
+/*Metodos de acessar os elementos de um site
+Por Marca(tagname) - getElementsByTagName()   #possivel selecionar mais de um objeto
+Por ID  - getElementById()
+Por Nome - getElementsByname()
+Por Classe - getElementsByClassName()
+Por Seletor - querySelector()|querySelectorAll()
+*/
+var corpo = window.document.body
+var p1 = window.document.getElementsByTagName('p')[0]  //pega todos paragrafos <p> e usando o numero zero limita ao primeiro , para o segundo seria o numero 1 e assim sucessivamente<p>, por isso os cohcetes
+var d = window.document.getElementById('msg')
+
+window.document.write('No primeiro paragrafo está escrito:' + p1.innerText)
+p1.style.color = 'blue'
+corpo.style.background = 'black'
+document.write(p1.innerHTML) // pega a formatação em html, diferente do innerText que so pega o texto (neste teste ele nao pegaria o negrito)
+//window.document.write(window.document.URL)
+//d.style.background = 'green'
+    //d.innerText = 'Estou aguardando...'//ao fazer isso você pode modificar a div
+  //  window.document.getElementById('msg').innerText='Olá' //faz o mesmo que a linha acima
+   //para ultilizar o getElementByName bastaria alterar para <div name="msg"> e assim servindo o mesmo para os outros
+    //para classe   <div class="msg"> e assim sucessivamente
+   var d = window.document.querySelector('div#msg')//div#msg é a representação do  <div id="msg"> caso fosse um   <div class="msg"> a representação seria 'div.msg' com ponto.  #esta linha esta funcionando da mesma forma que a 58
+   d.style.background = 'blue'
+   </script>
+
+</body>
+</html>
