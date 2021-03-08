@@ -1,1 +1,1 @@
-alert('Olá Baiano')
+alert('Olá Amigo')
