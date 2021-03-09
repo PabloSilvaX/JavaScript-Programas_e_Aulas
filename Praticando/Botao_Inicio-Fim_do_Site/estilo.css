@@ -1,0 +1,38 @@
+body {
+    background: rgb(107, 151, 233);
+    font: normal 15pt Arial;
+    text-align: center;
+}
+
+header{
+color:snow;
+text-align:center;
+}
+
+html { /*Faz o scroll ser exibido ao clicar (exibe a rolagem inves e ir direto)*/
+    scroll-behavior: smooth;
+  }
+
+section{
+background: snow;
+border-radius:100px;
+padding: 15px;
+width: 450px;
+margin:auto;
+box-shadow:5px 5px 10px rgba(10, 12, 11, 0.24)
+}
+
+i{
+    color: white;
+}
+
+i:hover{
+    color:rgb(26, 19, 10);
+}
+  
+footer{
+    color:snow;
+    text-align: center;
+    font-style: italic;
+    }
+    
