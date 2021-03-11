@@ -1,0 +1,91 @@
+body {
+    background: rgb(107, 151, 233);
+    font: normal 15pt Arial;
+}
+
+header{
+color:snow;
+text-align:center;
+}
+
+section{
+background: snow;
+border-radius:10px;
+padding: 15px;
+width: 500px;
+margin:auto;
+box-shadow:5px 5px 10px rgba(10, 12, 11, 0.24)
+}
+
+footer{
+color:snow;
+text-align: center;
+font-style: italic;
+}
+
+/*################################# ABAIXO SÃO CRIADOS OS SIMBOLOS E SUAS ANIMAÇÕES ####################################*/
+  
+  .quadrado { /*Criando o quadrado*/
+    background: red; /*Define sua cor*/
+    width: 50px; /*Largura do quadrado*/
+    height: 50px; /*Altura do quadrado*/
+    animation: go-back 1s infinite alternate; /*Definindo a animação:
+    go-back manda para o @keyframes abaixo.
+    1s é o tempo de delay da animação (velocidade)
+    infinite define que a animação ficara se repetindo infinitamente
+    alternate faz ele alternar de onde ele vem pra onde ele vai e visse versa (faz ele ir e voltar)*/
+  }
+  
+  @keyframes go-back {
+    from { /*de onde vem*/
+      transform: translateX(450px); /*o local de inicio*/
+    }
+    to { /*para onde vai*/
+      transform: translateX(0); /*o local pra onde ele vai*/
+    }
+  }
+  
+  .ball {
+    margin-top: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(150, 237, 100);
+    border: 2px solid #999;
+    animation: bounce 0.2s infinite alternate;
+   
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px); /*A LETRA Y SERVE PARA POSIÇÕES VERTICAIS (DE CIMA PARA BAIXO)*/
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+  .triangulo { /*Criando triangulo*/
+    margin-top: 20px;
+    margin-left: auto;
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #ffc456;
+    animation: anima-tri 1s infinite linear; /*Definindo a animação:
+    go-back manda para o @keyframes abaixo.
+    1s é o tempo de delay da animação (velocidade)
+    infinite define que a animação ficara se repetindo infinitamente
+    linear faz ele rodar de maneira constante sem desacelerar em nenhum momento mantendo a velocidade de rotação*/
+  }
+  
+  @keyframes anima-tri {
+
+    0% {          /*0% é o mesmo que 'from'*/ 
+      transform: rotate(0);
+    }
+    100% {        /*100% é o mesmo que 'to'*/ 
+      transform: rotate(360deg);
+    }
+
+  }
