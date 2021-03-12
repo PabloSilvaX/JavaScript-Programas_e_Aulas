@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<div id="sobre">    
+    <table style="width: 100%;">
+                <tr>
+                    <th>Oque fazer?</th>
+                    
+                </tr>
+        <tr>
+            <td>Mova o mouse sob o quadrado</td>
+        </tr>
+        <tr>
+            <td>Retire o mouse do quadrado</td>
+        </tr>
+        <tr>
+            <td>Clique no quadrado (5 tipos de cores podem aparecer)</td>
+        </tr>
+        <tr>    
+            <td>Clique 2x sob o quadrado</td>
+        </tr>
+        <tr> 
+            <td>Pressione qualquer tecla</td>
+        </tr>
+
+            </tr>
+</table>
+</div>
+
+<div id="area">
+    Interaja com este quadrado...
+</div>
+
+<div id="mouses">
+    <h4>Selecione o Tipo do mouse e Passe sob o quadrado novamente:</h4>
+    <input id='Pointer' type='radio' name='genero' value='pointer' onclick="mostrarGenero()" /><label for='Mouse'>Mão</label>
+    <input id='not-allowed' type='radio' name='genero' value='not-allowed' onclick="mostrarGenero()" /><label for='Mouse'>Bloqueado</label>
+    <input id='grab' type='radio' name='genero' value='grab' onclick="mostrarGenero()" /><label for='Mouse'>Mão aberta</label>
+    <input id='all-scroll' type='radio' name='genero' value='all-scroll' onclick="mostrarGenero()" /><label for='Masculino'>Setas Scroll</label>
+    <input id='crosshair' type='radio' name='genero' value='crosshair' onclick="mostrarGenero()" /><label for='Mouse'>Cruz</label>
+    <input id='help' type='radio' name='genero' value='help' onclick="mostrarGenero()" /><label for='Mouse'>Ajuda</label>
+</div>
+
+<footer>
+    <a href="https://github.com/pablos5z" style="color: white;">
+    <p>&copy; Pablito</p>
+    </a>
+</footer>   
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    background-color: rgba(129, 44, 207, 0.863);
+}
+div#area{
+    background: chartreuse;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+div#mouses{
+   text-align: center; 
+   color: white;
+}
+
+div#sobre{
+    color: white;
+    text-align: center;
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(80, 229, 255);
+}
+
+th{
+    color: turquoise;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+input{
+    cursor: default;
+}
+
+footer{
+    color:snow;
+    text-align: center;
+    font-style: italic;
+    padding-top: 20px;
+    }
